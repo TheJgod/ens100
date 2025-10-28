@@ -1,4 +1,4 @@
-# 🏭 Industrial Wafer Defect Detection with CNNs and Anomaly Detection
+# Industrial Wafer Defect Detection with CNNs and Anomaly Detection
 
 ## 📌 Overview
 
@@ -7,11 +7,11 @@ This repository implements an **end-to-end solution** for **industrial wafer def
 **Custom penalty-weighted metrics** guide model training to prioritize correct detection of defective and anomalous parts.
 
 **Key features**:  
-- ✅ Supervised classification for **known defect types**  
-- 🛠️ Unsupervised detection of **unknown anomalies (drift)**  
-- ⚖️ Handling of **imbalanced datasets** through **upsampling** and **tailored loss functions**  
-- 🎨 **Data augmentation** and specialized training strategies for robust performance  
-- 🚀 **End-to-end inference pipeline** with **thresholding** for anomaly detection
+- Supervised classification for **known defect types**  
+- Unsupervised detection of **unknown anomalies (drift)**  
+- Handling of **imbalanced datasets** through **upsampling** and **tailored loss functions**  
+- **Data augmentation** and specialized training strategies for robust performance  
+- **End-to-end inference pipeline** with **thresholding** for anomaly detection
 
 ---
 
@@ -25,18 +25,18 @@ The dataset comes from the **Valeo industrial quality control challenge** and co
   - ⚠️ 1 **drift class** representing unknown anomalies (appears only in the test set)
 
 - **Size**:
-  - 📚 **Training set**: ~8,000 images  
-  - 🗂️ **Test set**: ~1,000 images
+  - **Training set**: ~8,000 images  
+  - **Test set**: ~1,000 images
 
 - **Challenges**:
-  - ⚖️ Highly **imbalanced classes**, with some defect types underrepresented  
-  - 🖼️ **Variable inspection conditions** (different component types and inspection zones)  
-  - ❌ Drift/unknown anomalies must be detected **unsupervised**, as they do not appear in the training set
+  - Highly **imbalanced classes**, with some defect types underrepresented  
+  - **Variable inspection conditions** (different component types and inspection zones)  
+  - Drift/unknown anomalies must be detected **unsupervised**, as they do not appear in the training set
 
 - **Preprocessing & Augmentation**:
-  - 🖌️ Normalization of image pixel values  
-  - 🔄 Rotation, translation, and cropping to increase variability and improve generalization  
-  - ⬆️ Upsampling of underrepresented classes to mitigate class imbalance
+  - Normalization of image pixel values  
+  - Rotation, translation, and cropping to increase variability and improve generalization  
+  - Upsampling of underrepresented classes to mitigate class imbalance
 
 ---
 
